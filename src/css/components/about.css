@@ -1,0 +1,19 @@
+/* ==================================
+  About
+================================== */
+
+.c-about__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 1.5rem;
+}
+
+
+.c-icon__container {
+  perspective: 600px;
+}
+
+.c-icon__container svg {
+  transform-origin: 50% 50%;
+}

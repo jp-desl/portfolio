@@ -1,0 +1,19 @@
+/* ==================================
+  CTA
+================================== */
+
+.c-cta {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 var(--space-2);
+  display: block;
+  margin-top: var(--space-2);
+  width: fit-content;
+  border-right: 2px solid transparent;
+
+}
+
+.c-cta:hover {
+  color: var(--color-rust);
+}

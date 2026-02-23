@@ -1,0 +1,119 @@
+/* ==================================
+  PROJECTS
+================================== */
+
+.c-projects__showcase {
+  display: flex;
+}
+
+.c-projects__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: var(--rule-bold);
+  width: 40%;
+}
+
+
+
+.c-projects__item {
+  border-bottom: var(--rule-bold);
+  margin: 0;
+  padding: 0;
+}
+.c-projects__item.--active {
+  color: var(--color-rust);
+  pointer-events: none;
+}
+
+.c-projects__description {
+  position: relative;
+  overflow: hidden;
+  border: var(--rule-bold);
+  width: 60%;
+}
+
+.c-projects__item .c-project__details { 
+  display: none;
+}
+
+
+/* ==================================
+  PROJECT
+================================== */
+
+.c-project__row {
+  width: 100%;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  border: 0;
+  text-align: left;
+  cursor: pointer;
+  transition: color var(--trans-main), background var(--trans-main);
+}
+
+.c-project__title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-project__name {
+  font-size: var(--fs-lg);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-right: var(--space-3);
+}
+
+.c-project__date {
+  font-family: var(--font-mono);
+}
+
+.c-project__row:hover {
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.c-project__meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .c-cta {
+    align-self: flex-end;
+    padding: 0 var(--space-2);
+    margin-left: auto;
+  }
+}
+
+/* .c-project__role {
+  padding-bottom: var(--space-2);
+  border-bottom: var(--rule-thin);
+  font-weight: bold;
+} */
+
+.c-project__tags {
+  border-top: var(--rule-thin);
+  font-family: var(--font-mono);
+  font-size: var(--fs-sm);
+  padding-top: var(--space-3);
+  
+  span {
+    color: var(--color-rust);
+  }
+}
+
+.c-project__details {
+  position: relative;
+  display: flex;
+  flex-direction:column;
+
+  /* justify-content: space-between; */
+  gap: var(--space-4);
+  padding: var(--space-4);
+
+  /* min-height: 100%; */
+  /* max-height: fit-content; */
+}
+
