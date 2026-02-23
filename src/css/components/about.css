@@ -4,16 +4,37 @@
 
 .c-about__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, auto);
-  gap: 1.5rem;
+  grid-template-columns: repeat(5, 1fr);
+  /* grid-template-rows: repeat(3, auto); */
+  grid-auto-rows: 1fr;
+  gap: var(--space-4);
 }
 
+.c-about__grid-item {
+  padding: var(--space-3);
+
+}
 
 .c-icon__container {
-  perspective: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-4);
+  cursor: pointer;
 }
 
+.c-icon__container svg path {
+  fill: var(--color-ink);
+  transition: var(--trans-quick);
+}
+
+.c-icon__container:hover svg path {
+  fill: var(--color-rust);
+}
+
+
+
 .c-icon__container svg {
-  transform-origin: 50% 50%;
+  transform-origin: center center;
+  display: block;
 }

@@ -31,8 +31,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Type final, confident version
     .to(".c-hero__title", {
       duration: 1.2,
-      text: "J.P. DESLOGES",
-      delimiter: "",
+      text: {
+        value: 'J<span class="c-hero__title-accent">.</span>P<span class="c-hero__title-accent ">.</span> DESLOGES',
+        // value: 'JP DESLOGES',
+        delimiter: "",
+        type: "html"
+      },
       ease: "power2.out"
     })
 

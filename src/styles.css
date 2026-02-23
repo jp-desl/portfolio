@@ -16,7 +16,7 @@
   --fs-sm: 0.85rem;   /* labels */
   --fs-md: 1rem;      /* body */
   --fs-lg: 1.4rem;    /* project titles */
-  --fs-xl: 3rem;      /* section titles */
+  --fs-xl: 4rem;      /* section titles */
   --fs-xxl: 7.5rem;   /* hero */
 
 
@@ -53,11 +53,6 @@
   /*
     768, 1024
   */
-
-  /* --ease: cubic-bezier(.22,1,.36,1);
-  --dur-1: 160ms;
-  --dur-2: 320ms;
-  --dur-3: 700ms; */
 
   /*
   —
@@ -107,24 +102,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Headings feel like print */
-/* h1, h2, h3 {
-  margin: 0;
-  font-weight: 800;
-  letter-spacing: -0.03em;
-} */
-
-/* Paragraph discipline */
-p {
-  margin: 0;
-  max-width: 52ch;
-}
-
-/* Links are typographic, not buttons */
 a {
   color: inherit;
   text-decoration: none;
-  /* border-bottom: 1px solid currentColor; */
 }
 
 /* a:hover {
@@ -153,9 +133,9 @@ button {
     UTILITIES
    ================================== */
 
-.u-upper { text-transform: uppercase; }
-.u-mono { font-family: var(--font-mono); }
-.u-rust { color: var(--color-rust); }
+.u-text-upper { text-transform: uppercase; }
+.u-text-mono { font-family: var(--font-mono); }
+.u-color-accent { color: var(--color-rust); }
 .u-tight { letter-spacing: -0.03em; }
 .u-accent-rule {
   height: 2px;
@@ -191,7 +171,7 @@ button {
   font-family: var(--font-mono);
   min-width: 100%;
   text-transform: uppercase;
-  font-size: var(--fs-sm);
+  /* font-size: var(--fs-sm); */
   font-weight: 700;
 }
 

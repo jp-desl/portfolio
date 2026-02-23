@@ -6,15 +6,6 @@
     min-height: 50vh;
   }
 
-  .cursor {
-    display: inline-block;
-    width: 2px;
-    height: 1em;
-    background: currentColor;
-    margin-left: 4px;
-    transform: translateY(3px);
-  }
-
   .c-hero__title {
     padding-top: var(--space-7);
     font-family: var(--font-display);
@@ -22,7 +13,11 @@
     line-height: 0.9em;
     letter-spacing: 0.02em;
     margin: auto;
+  }
 
+  .c-hero__title-accent {
+    color: var(--color-rust);
+    font-size: calc(var(--fs-xxl) * 0.75);
   }
 
   .c-hero__subtitle {
