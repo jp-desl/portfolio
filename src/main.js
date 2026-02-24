@@ -16,14 +16,6 @@ document.querySelector('.c-icon__container.--doceca').innerHTML = dodecaIcon;
 import icosaIcon from './assets/img/icon-icosa.svg?raw';
 document.querySelector('.c-icon__container.--icosa').innerHTML = icosaIcon;
 
-
-
-
-/* Sections */
-import "./js/hero";
-import "./js/projects";
-import "./js/about";
-
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import gsap from "gsap";
 import { TextPlugin } from "gsap/TextPlugin"
@@ -34,3 +26,8 @@ gsap.registerPlugin(TextPlugin);
 gsap.registerPlugin(ScrollTrigger);
 
 const scroll = new LocomotiveScroll();
+
+/* Sections */
+import "./js/hero";
+import "./js/projects";
+import "./js/about";
