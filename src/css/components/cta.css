@@ -11,9 +11,26 @@
   margin-top: var(--space-2);
   width: fit-content;
   border-right: 2px solid transparent;
+  transition: var(--trans-main);
 
 }
 
+.c-cta::before,
+.c-cta::after {
+  content: '|';
+  display: inline-block;
+  padding: var(--space-1);
+  transition: var(--trans-main);
+}
+.c-cta::after {
+  content: '|'
+}
 .c-cta:hover {
   color: var(--color-rust);
+  &::before {
+    content: '';
+  }
+  &::after {
+    content: '|>';
+  }
 }

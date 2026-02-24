@@ -2,7 +2,10 @@ import gsap from "gsap";
 
 document.addEventListener("DOMContentLoaded", function () {
 
-  const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+  const tl = gsap.timeline({
+    delay: 0.9,
+    defaults: { ease: "power2.out" } 
+  });
 
   tl
     .set(".c-hero__title", { text: "" })
@@ -10,8 +13,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // Quick typing of the first version
     .to(".c-hero__title", {
       duration: 0.9,      // slightly faster
-      text: "JEAN-PHI",
-      delimiter: "",
+      text: {
+        value: "JEAN-PHI",
+        delimiter: ""
+      }, 
       ease: "power1.out"
     })
 

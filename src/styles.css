@@ -4,6 +4,7 @@
 @import './css/components/hero.css';
 @import './css/components/projects.css';
 @import './css/components/about.css';
+@import './css/components/contact.css';
 
 :root {
 
@@ -30,29 +31,20 @@
   --rule-bold: 2px solid var(--color-ink);
 
   /* ---- Spacing */
-  /* micro / rules */
-  --space-1: 0.25rem;  /* 4px  */
-  --space-2: 0.5rem;   /* 8px  */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
 
-  /* body rhythm */
-  --space-3: 1rem;     /* 16px */
-  --space-4: 2rem;     /* 32px */
+  --space-3: 1rem;
+  --space-4: 2rem;
 
-  /* poster spacing */
-  --space-5: 4rem;     /* 64px */
-  --space-6: 6rem;     /* 96px */
-  --space-7: 8rem;     /* 128px */
+  --space-5: 4rem;
+  --space-6: 6rem;
+  --space-7: 12rem;
 
 
   /* Transitions */
   --trans-main: 110ms linear;
   --trans-quick: 85ms linear;
-
-  /* Responsive */
-
-  /*
-    768, 1024
-  */
 
   /*
   —
@@ -68,6 +60,17 @@
 ⤴
 */
 
+}
+
+@media screen and (max-width: 1023px) {
+  /* :root {
+    --fs-xxl: 6rem;
+  } */
+}
+@media screen and (max-width: 767px) {
+  :root {
+    --fs-xxl: 5rem;
+  }
 }
 
 /* ==================================
@@ -88,7 +91,7 @@ html {
   background: var(--color-paper);
   color: var(--color-ink);
   
-  font-size: 16px;
+  font-size: var(--fs-md);
 }
 
 ::selection {
@@ -156,8 +159,13 @@ button {
 .o-section__header {
   margin-bottom: var(--space-5);
 }
+
 .o-section__header.--flipped {
   text-align: right;
+}
+
+.o-section__header.--centered {
+  text-align: center;
 }
 
 .o-section__title {
@@ -196,25 +204,33 @@ button {
   letter-spacing: 0.12em;
 }
 
+.o-media__container {
+  padding: var(--space-3);
+  border: var(--rule-bold);
+  outline: var(--rule-thin);
+  outline-offset: -10px;
+}
+.o-media__container img {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+  display: block;
+}
 
 
-/* .c-project__cta::before,
-.c-project__cta::after {
-  content: '|';
-  padding: var(--space-1);
+.c-mark {
+  position: absolute;
+  font-family: var(--font-mono);
+  font-size: var(--fs-lg);
+  opacity: 0.5;
 }
-.c-project__cta::after {
-  content: '|'
-}
-.c-project__cta:hover {
-  color: var(--color-rust);
-  &::before {
-    content: '';
-  }
-  &::after {
-    content: '|>';
-  }
-} */
+
+.c-mark--tl { top: 1rem; left: 0; }
+.c-mark--tr { top: 1rem; right: 1rem; }
+.c-mark--bl { bottom: 1rem; left: 1rem; }
+.c-mark--br { bottom: 1rem; right: 0; }
+
 
 
 
