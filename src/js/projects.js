@@ -22,7 +22,7 @@ function updateProject(item) {
   });
 
   if (currentContent) {
-    // Slide current out to the right
+    // Slide out right
     tl.to(currentContent, {
       x: 100,
       opacity: 0,
@@ -39,7 +39,7 @@ function updateProject(item) {
   // Prepare new content off-screen (left)
   gsap.set(clonedDetails, { x: -100, opacity: 0 });
 
-  // Slide new content in from left
+  // New content
   tl.to(clonedDetails, {
     x: 0,
     opacity: 1,

@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Quick typing of the first version
     .to(".c-hero__title", {
-      duration: 0.9,      // slightly faster
+      duration: 0.9,
       text: {
         value: "JEAN-PHI",
         delimiter: ""
@@ -23,29 +23,28 @@ document.addEventListener("DOMContentLoaded", function () {
     // Pause
     .to({}, { duration: 0.4 })
 
-    // Erase quickly with snappy ease
+    // Erase quickly
     .to(".c-hero__title", {
       duration: 0.5,
       text: "",
       ease: "power3.in"
     })
 
-    // Tiny pause before final name
+    // Quick pause
     .to({}, { duration: 0.2 })
 
-    // Type final, confident version
+    // Final
     .to(".c-hero__title", {
       duration: 1.2,
       text: {
         value: 'J<span class="c-hero__title-accent">.</span>P<span class="c-hero__title-accent ">.</span> DESLOGES',
-        // value: 'JP DESLOGES',
         delimiter: "",
         type: "html"
       },
       ease: "power2.out"
     })
 
-    // Subtitle fades in naturally
+    // Subtitle
     .to(".c-hero__subtitle", {
       opacity: 1,
       y: 0,
