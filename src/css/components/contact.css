@@ -23,6 +23,9 @@
 
   .c-contact__links {
     gap: var(--space-3);
+    flex-direction: column;
+    align-items: center;
+
   }
   .c-contact__links .c-cta {
     font-size: calc(var(--fs-lg) * 0.75)

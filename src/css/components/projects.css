@@ -136,6 +136,18 @@
 
 /* Phone */
 @media screen and (max-width: 767px) {
+
+  .c-project__row {
+    padding: var(--space-3);
+  }
+
+  .c-project__title {
+    flex-direction: column;
+    align-items: unset;
+  }
+  .c-project__date {
+    font-size: var(--fs-sm);
+  }
   .c-project__details {
     padding: var(--space-4);
     gap: var(--space-3);

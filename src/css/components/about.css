@@ -122,6 +122,7 @@
 
   .c-card__face {
     padding: var(--space-4);
+    min-height: fit-content;
   }
 
   .c-icon__container {

@@ -218,6 +218,12 @@ button {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .o-section {
+  padding: var(--space-6) var(--space-4);
+}
+}
+
 
 .c-mark {
   position: absolute;
